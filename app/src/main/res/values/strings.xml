@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Carwash</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string-array name="bg">
+        <item>Select Work Location</item>
+        <item>31 Milestone</item>
+        <item>cs</item>
+        <item>33 Milestone</item>
+        <item>34 Milestone</item>
+    </string-array>
+</resources>

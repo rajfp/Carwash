@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    android:stateListAnimator="@null">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar"></include>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tool"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:id="@+id/view_pager">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_marginTop="-20dp"
+        android:layout_below="@id/view_pager"
+        android:id="@+id/SliderDots"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"/>
+    <Button
+        android:drawableTop="@mipmap/loc"
+        android:layout_below="@id/view_pager"
+        android:layout_width="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="22dp"
+        android:layout_height="70dp"
+        android:textColor="#ffffff"
+        android:text="Work\nLocations"
+        android:padding="3dp"
+        android:background="@drawable/border"
+        android:id="@+id/butt1" />
+    <Button
+        android:layout_below="@id/view_pager"
+
+        android:layout_alignParentRight="true"
+        android:layout_width="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="22dp"
+        android:padding="3dp"
+        android:layout_height="70dp"
+        android:textColor="#ffffff"
+        android:drawableTop="@mipmap/wa"
+        android:text="View\n Washed"
+        android:background="@drawable/border"
+        android:id="@+id/butt2"
+
+        />
+    <Button
+        android:layout_below="@id/butt1"
+
+        android:drawableTop="@mipmap/gi"
+        android:layout_width="130dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:layout_marginLeft="22dp"
+        android:layout_height="70dp"
+        android:text="Offers and\n Deals"
+        android:background="@drawable/border"
+        android:id="@+id/butt3"
+
+        />
+    <Button
+        android:layout_below="@id/butt2"
+        android:layout_width="130dp"
+        android:drawableTop="@mipmap/gi"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_height="70dp"
+        android:textColor="#ffffff"
+        android:text="Send A\n Gift"
+        android:background="@drawable/border"
+        android:id="@+id/butt4"
+
+        />
+
+</RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.NavigationView
+
+        app:headerLayout="@layout/drawer"
+        app:menu="@menu/ress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

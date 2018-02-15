@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    tools:context="com.example.rajat.carwash.Work_locations">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"></include>
+    <Spinner
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tool"
+        android:layout_marginRight="20dp"
+        android:layout_width="400dp"
+        android:dropDownWidth="200dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_marginTop="30dp"
+        android:id="@+id/spin"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/spin"
+        android:layout_marginLeft="23dp"
+        android:textStyle="bold"
+        android:id="@+id/textv"
+        android:layout_height="wrap_content"
+        android:text="List of car need to clean"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e50000"
+        android:id="@+id/textv2"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@id/textv"
+        android:text="select the car image and start to clean one by one"/>
+
+    <ImageView
+        android:stateListAnimator="@null"
+        android:scaleType="fitXY"
+        android:elevation="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imv"
+        android:onClick="dialogbox"
+        android:layout_below="@id/textv2"
+        android:id="@+id/img1"/>
+    <ImageView
+        android:stateListAnimator="@null"
+        android:scaleType="fitXY"
+        android:elevation="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textv2"
+        android:layout_toRightOf="@id/img1"
+        android:background="@drawable/imv"
+        android:layout_alignBottom="@id/img1"
+        android:id="@+id/img2"/>
+    <ImageView
+        android:background="@drawable/imv"
+        android:layout_alignBottom="@id/img2"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/img2"
+        android:layout_marginLeft="20dp"
+        android:stateListAnimator="@null"
+        android:elevation="10dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textv2"
+        android:id="@+id/img3"/>
+    <ImageView
+        android:stateListAnimator="@null"
+        android:elevation="10dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/imv"
+        android:layout_marginLeft="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:id="@+id/img4"/>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:stateListAnimator="@null"
+        android:scaleType="fitXY"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/imv"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img2"
+        android:layout_toRightOf="@id/img4"
+        android:layout_alignBottom="@id/img4"
+        android:id="@+id/img5"/>
+    <ImageView
+        android:layout_alignBottom="@id/img5"
+        android:stateListAnimator="@null"
+        android:elevation="10dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/img5"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/imv"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img3"
+        android:id="@+id/img6"/>
+    <Button
+        android:layout_marginLeft="120dp"
+        android:id="@+id/bac"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img5"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:background="@drawable/border"/>
+
+
+</RelativeLayout>
+</ScrollView>
+    <android.support.design.widget.NavigationView
+
+        app:headerLayout="@layout/drawer"
+        app:menu="@menu/ress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

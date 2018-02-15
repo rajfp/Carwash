@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    android:orientation="vertical"
+    tools:context="com.example.rajat.carwash.Work_locations">
+    <ImageView
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/gift"/>
+    <ImageView
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/giff"/>
+    <ImageView
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:layout_height="100dp"
+        android:src="@drawable/gift"/>
+
+    <ImageView
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:layout_height="100dp"
+        android:src="@drawable/gift"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backk"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
